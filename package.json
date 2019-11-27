@@ -4,7 +4,7 @@
 	"publisher": "wjhs",
 	"icon": "images/icon.png",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.3.1",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
@@ -23,6 +23,10 @@
 			}
 		]
 	},
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/wanganjuan/wjhs.git"
+    },
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
