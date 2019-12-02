@@ -4,7 +4,7 @@
 	"publisher": "wjhs",
 	"icon": "images/icon.png",
 	"description": "",
-	"version": "0.4.1",
+	"version": "0.5.1",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
