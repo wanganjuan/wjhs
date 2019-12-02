@@ -4,7 +4,7 @@
 	"publisher": "wjhs",
 	"icon": "images/icon.png",
 	"description": "",
-	"version": "0.3.1",
+	"version": "0.4.1",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
@@ -12,7 +12,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.helloWorld",
+		"onCommand:extension.ccc"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -20,8 +21,33 @@
 			{
 				"command": "extension.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "extension.ccc",
+				"title": "ccc"
 			}
-		]
+		],
+		"viewsContainers": {
+			"activitybar": [
+					{
+							"id": "package-explorer",
+							"title": "Package Explorer",
+							"icon": "images/icon.png"
+					}
+			]
+	},
+	"views": {
+			"package-explorer": [
+					{
+							"id": "package-dependencies",
+							"name": "Dependencies"
+					},
+					{
+							"id": "package-outline",
+							"name": "Outline"
+					}
+			]
+	}
 	},
 	"repository": {
         "type": "git",
